@@ -1,0 +1,41 @@
+@font-face{
+	/* On donne un nom (au choix) à la fonte téléchargée */
+	font-family: "fonttitre";
+	/* On indique le chemin du fichier de fonte à télécharger */
+	/* L'indication du format n'est pas obligatoire */
+	src: url("./font/Harabara.ttf") format("truetype");
+	
+}
+
+h1, h2, h3 {
+
+	font-family:"fonttitre","arial";
+
+}
+
+h1 {
+	font-size: 2em;
+	color:  #ffda21;
+	text-shadow: -4px 4px 0px black;
+	letter-spacing:5px;
+}
+
+a {
+	text-decoration: none;
+
+}
+#menu  a /* Contenu des listes */
+
+{
+	font-family:"fonttitre","arial";
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: normal;
+}
+p.radio_option{
+	margin:0;
+	padding:0;
+	font: arial 5px;
+	color:white;
+}

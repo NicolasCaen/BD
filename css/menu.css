@@ -1,0 +1,138 @@
+@font-face{
+	/* On donne un nom (au choix) à la fonte téléchargée */
+	font-family: "fonttitre";
+	/* On indique le chemin du fichier de fonte à télécharger */
+	/* L'indication du format n'est pas obligatoire */
+	src: url("./font/Harabara.ttf") format("truetype");
+	
+}
+/*-----------------------------------------------------------------------------------*/
+/*------------------ HAut de page  MENU----------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------*/
+#menu-wrapper {		
+	width:900px;		/*fond de toute la largeur de la page et de la hauteur de l'image*/
+	height: 65px;	
+
+	margin: auto ;/*menu centrer dans la page*/		/*si on modifie la hauteur la partie inferieur descend comme un margin-bottom*/
+	/*background: url(images/main-wrapper.jpg) repeat-x left top;*/
+}
+
+
+#wrapper {
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*------------------ menu haut-------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------*/
+
+
+#menu /* Ensemble du menu */
+{
+		background: url(images/menu.png)  repeat-x;
+		float:right;
+		border-bottom-right-radius: 10px 10px;
+		-webkit-border-bottom-right-radius: 10px;
+    	-moz-border-bottom-right-radius: 10px;
+
+		border-bottom-left-radius: 10px 10px;
+		-webkit-border-bottom-left-radius: 10px;
+    	-moz-border-bottom-left-radius: 10px;
+
+		border-bottom:solid 2px black;
+		border-left:solid 2px black;
+		border-right:solid 1px black;	
+		behavior: url(/PIE.htc); 	
+}
+#menu, #menu ul /* Liste */  
+{
+        padding : 0; /* pas de marge intérieure */
+        margin : 0; /* ni extérieure */
+        list-style : none; /* on supprime le style par défaut de la liste */
+        line-height :25px; /* on définit une hauteur pour chaque élément */
+        text-align : center; /* on centre le texte qui se trouve dans la liste */
+}
+
+
+
+#menu  a /* Contenu des listes */
+
+{		
+        display : block; /* on change le type d'élément, les liens deviennent des balises de type block */
+        width : 144px; /* on peut donc leur donner une taille */
+        height: 30px;
+        padding : 10px; /* aucune marge intérieure */
+}
+
+
+#menu li /* Elements des listes */      
+{ 
+        float : left; 
+        /*pour ie*/
+        border-right : 1px solid lightgrey; 
+}
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+html>body #menu li
+{
+        border-right: 1px solid rgba(0, 0, 255, 0.2) ; /* on met une bordure transparente à droite de chaque élément */
+}
+
+#menu li ul /* Sous-listes */
+{ 
+
+		border-bottom-right-radius: 10px 10px;
+		border-bottom-left-radius: 10px 10px;
+		border-bottom:solid 2px black;
+		border-left:solid 2px black;
+		border-right:solid 1px black;		
+        position: absolute; /* Position absolue */
+        width: 165px; /* Largeur des sous-listes */
+        left: -999em; /* Hop, on envoie loin du champ de vision */
+        background-color: #60ade5;
+}
+
+
+#menu li ul li /* Éléments de sous-listes */
+{
+        border-top :3px solid rgba(0, 0, 255, 0.2); /* on met une bordure blanche en haut de chaque élément d'une sous liste */
+        border-right: none; 
+}
+
+/* IE ne reconnaissant pas le sélecteur ">" */
+html>body #menu li ul li                
+{
+        border-top : 1px solid lightgrey; /* on met une bordure transparente en haut de chaque élément */
+        border-right: none; 
+}
+
+
+
+#menu a:hover /* Lorsque la souris passe sur un des liens */    
+{
+        border-radius: 30px;
+        color: #000; /* On passe le texte en noir... */
+        background: #ffeb23; /* ... et au contraire, le fond en blanc */
+}
+
+#menu ul li ul li a:hover /* Lorsque la souris passe sur un des liens des sous-listes*/    
+{
+        border-radius: 30px;
+        color: #000; /* On passe le texte en noir... */
+        background: #2d93dd; /* ... et au contraire, le fond en blanc */
+}
+
+
+#menu li:hover ul ul, #menu li.sfhover ul ul /* Sous-sous-listes lorsque la souris passe sur un élément de liste */
+{
+        left: -999em; /* On expédie les sous-sous-listes hors du champ de vision */
+}
+
+#menu li:hover ul, #menu li li:hover ul, #menu li.sfhover ul, #menu li li.sfhover ul  /* Sous-listes lorsque la souris passe sur un élément de liste ET sous-sous-lites lorsque la souris passe sur un élément de sous-liste */
+{
+        left: auto; /* Repositionnement normal */
+        min-height: 0; /* Corrige un bug sous IE */
+}

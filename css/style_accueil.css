@@ -1,0 +1,66 @@
+@font-face{
+	/* On donne un nom (au choix) à la fonte téléchargée */
+	font-family: "fonttitre";
+	/* On indique le chemin du fichier de fonte à télécharger */
+	/* L'indication du format n'est pas obligatoire */
+	src: url("./font/Harabara.ttf") format("truetype");
+	
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: #050801 url(images/bg_fond.jpg)  repeat-x;
+	font-family: 'Arvo', serif;
+	font-size: 14px;
+	color: black;
+}
+#haut{
+	padding-top: 100px;
+	height:300px;
+	width:660px;
+	margin: 0px auto 0 auto;/*menu centrer dans la page*/
+	display:inline-block;
+	background:black;
+	padding:20px;
+}
+h1, h2, h3 {
+	margin: 0px;
+	padding: 0px;
+	font-weight: 400;
+	font-family:"fonttitre","arial";
+}
+#gauche, #droite{
+	
+	height:300px;
+	width:300px;
+	background:grey;
+}
+ #gauche{
+ 	float:left;
+ 	
+ }
+ #droite{
+ 	float:right;
+ 	
+ }
+ #bas{
+ 	clear:all;
+ 	height:300px;
+	width:500px;
+	margin: 0px auto 0 auto;/*menu centrer dans la page*/
+	
+	background:black;
+	padding:20px;
+ }
+ 
+ #dhtmltooltip{
+position: absolute;
+width: 150px;
+border: 5px solid #587C9E;
+padding: 2px;
+background-color: lightyellow;
+visibility: hidden;
+z-index: 100;
+/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+}

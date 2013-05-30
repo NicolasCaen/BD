@@ -1,0 +1,413 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #60ade5 url(images/bg_fond_simpson.jpg)  repeat-x;
+	font-family: 'Arvo', serif;
+	font-size: 14px;
+	/*color: black;*/
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*------------------ HAUT----------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------*/
+
+
+#haut {
+	background: url(images/logo_simpson.png) no-repeat ;
+	/*rgba(0,0,0,1) pour transparence image centrer on peut mettre une image plus largeque le reste l'image se trouvera en bas du bloc */
+	width: 980px;/*on peut le faire de la taille qu'on veux */
+	height: 300px;/*hauteur qu'on veux,comme l'image est en bas si on met plus grand que l'image ca fera comme un margin top , si on enleve bottom dans les propriété du background alors*/
+	margin-right:  auto;
+	margin-left: auto;
+	margin-top:15px;
+	margin-bottom:15px;
+	color:white;
+}
+#hautdroite{
+	margin-left: 500px;
+}
+/*-----------------------------------------------------------------------------------*/
+/*------------------ Page contient le content et le menu droit sidebar--------------*/ 
+/*-----------------------------------------------------------------------------------*/
+
+#page{
+		border-top-left-radius: 100px 200px;
+		border-bottom-right-radius: 100px 200px;
+		border-left:solid 4px black;
+		border-right:solid 2px black;
+		border-top:solid 1px black;
+		border-bottom:solid 6px black;
+		background: #2c94dd url(images/bart.png) right no-repeat ;
+		overflow: hidden;
+		width: 900px;/*on peut mettre la largeur de page qu'on veux */
+		margin: 0px auto 0 auto;
+		padding:40px;
+}
+
+
+/* Content */
+
+#content {
+	float: right;
+	margin-right:10px;
+	width: 500px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*------------------ Footer- about---------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------*/
+
+#about {
+	overflow: hidden;
+	width: 950px;
+	margin: 20px auto 0 auto;
+	padding: 20px 20px;
+	background: rgba(0,0,0,.5);
+}
+
+#about .title {
+	padding-bottom: 10px;
+	letter-spacing: -1px;
+	text-transform: lowercase;
+	color: #ff0085;
+}
+/*-----------------------------------------------------------------------------------*/
+/*------------------ Footer- copiright-----------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------*/
+#footer {
+	width: 900px;
+	height: 140px;
+	margin: 0px auto;
+}
+
+#footer p {
+	margin: 0;
+	padding-top: 30px;
+	line-height: normal;
+	text-transform: lowercase;
+	text-align: center;
+	font-size: 12px;
+}
+
+#footer a {
+	text-decoration: underline;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*------------------ catalogue------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------*/
+
+div.vignette{
+	border-top-left-radius: 50px 50px;
+	border-bottom-right-radius: 50px 100px;
+	border-top-right-radius: 50px 100px;
+	border-right:solid 2px black;
+	border-bottom:solid 6px black;
+	background:   #ffda21  repeat-x;
+	padding: 10px;
+	width:500px;
+	clear:left;
+
+}
+div.vignette :hover{
+	background: #d7def0;
+}
+div.vignette a :hover{
+	text-shadow: 2px 2px 2px black, -2px -2px 2px white;
+	color: red;
+}
+.vignette img{
+	box-shadow: -5px 5px 2px black;
+	border-top-left-radius: 25px 15px;
+	border-bottom-right-radius: 15px 25px;
+	border-right:solid 2px black;
+	border-bottom:solid 4px black;
+	margin: 5px;
+	height:190px;
+	width:170px;
+
+	float:left;
+}
+.vignette b{
+	font-family:"fonttitre","arial";
+	margin-top: 5px;
+	font-size: 30px;
+}
+.vignette_droite{
+
+	border-bottom-right-radius: 50px 100px;
+	border-top-right-radius: 50px 100px;
+	padding-left: 20px;
+	padding-top: 20px;
+	height:180px;
+	margin-left: 210px;
+	font-size:22px;
+	background:white;
+}
+/*-----------------------------------------------------------------------------------*/
+/*------------------ GESTION COMMENTAIRE--------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------*/
+
+div.vignette_commentaire{
+	border-top-left-radius: 50px 50px;
+	border-bottom-right-radius: 50px 100px;
+	border-top-right-radius: 50px 100px;
+	border-right:solid 2px black;
+	border-bottom:solid 6px black;
+	background:   #ffda21  repeat-x;
+	padding: 10px;
+	height:400px;
+	width:800px;	
+	clear:left;
+
+}
+div.vignette_commentaire :hover{
+	background:   #d7def0;
+}
+div.vignette_commentaire a:hover{
+	text-shadow: 2px 2px 2px black, -2px -2px 2px white;
+	color:red;
+}
+.vignette_commentaire img{
+	box-shadow: -5px 5px 2px black;
+	border-top-left-radius: 25px 15px;
+	border-bottom-right-radius: 15px 25px;
+	border-right:solid 2px black;
+	border-bottom:solid 4px black;
+	margin: 5px;
+	height:190px;
+	width:170px;
+
+	float:left;
+}
+.vignette_commentaire b{
+	font-family:"fonttitre","arial";
+	margin-top: 5px;
+	font-size: 30px;
+}
+.vignette_droite_commentaire{
+
+	border-bottom-right-radius: 50px 100px;
+	border-top-right-radius: 50px 100px;
+	padding-left: 20px;
+	padding-top: 20px;
+	height:300px;
+	margin-left: 210px;
+	font-size:22px;
+	background:white;
+}
+.vignette_droite_commentaire i{
+font-size: 12px;
+
+}
+.vignette_gauche_bas_commentaire{
+	border-top-right-radius: 720px 100px;
+	border-top-left-radius: 50px 100px;
+	width: 720px;
+	font-size: 12px;
+	background:#5face5;
+	padding:15px;
+}
+.vignette_gauche_bas_commentaire b{
+
+	
+	font-size: 14px;
+}
+
+
+#content_top{
+
+	border-top-left-radius: 500px 100px;
+	border-top-right-radius: 20px;
+	border-top:solid 3px black;
+	border-right:solid 2px black;
+	background:#60ade5;
+	margin-bottom: 100px;
+	margin:auto;
+	width:  500px;
+	height: 70px;
+	margin-top:70px;
+
+	float:right;
+}
+#content_top  li {float : left; }
+#content_top  a /* Contenu des listes */
+{		
+        display : block; /* on change le type d'élément, les liens deviennent des balises de type block */
+        width :30px; /* on peut donc leur donner une taille */
+        height: 30px;
+        padding : 10px; /* aucune marge intérieure */
+        color:red;
+}
+#content_top  a:hover {
+	background: #d19f29;
+}
+
+.clear{clear:all;}
+/*-----------------------------------------------------------------------------------*/
+/*------------------ DETAIL----------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------*/
+div.vignettebig{
+	/*border-top-left-radius: 50px 50px;
+	border-bottom-right-radius: 50px 100px;
+	border-top-right-radius: 50px 100px;
+	border-right:solid 2px black;
+	border-bottom:solid 6px black;
+	background:   #ffda21  repeat-x;*/
+	padding: 10px;
+	width:650px;
+	height:630px;
+	clear:left;
+
+}
+
+.vignettebig img{
+	box-shadow: -5px 5px 2px black;
+	border-top-left-radius: 25px 15px;
+	border-bottom-right-radius: 15px 25px;
+	border-right:solid 2px black;
+	border-bottom:solid 4px black;
+	margin: 5px;
+	height:600px;
+	width:400px;
+
+	float:left;
+}
+
+.vignettebig_droite{
+
+	border-bottom-right-radius: 50px 100px;
+	border-top-right-radius: 50px 100px;
+	padding-left: 20px;
+	padding-top: 25px;
+	height:300px;
+	margin-left: 210px;
+	margin-top: 10px;
+	font-size:22px;
+	background:white;
+}
+.resume b{
+	font-family:"fonttitre","arial";
+	margin-top: 5px;
+	font-size: 30px;
+}
+.affiche_commentaire b{
+	font-family:"fonttitre","arial";
+	margin-top: 5px;
+	font-size: 30px;
+}
+.resume{
+	
+	border-top-right-radius: 50px 100px;
+	border-bottom-left-radius: 50px 100px;
+	
+	padding:40px;
+	background:white;
+}
+
+.affiche_commentaire{
+	
+	border-radius:20px;
+	padding:40px;
+	background:white;
+}
+#commentaire b{
+	font-family:"fonttitre","arial";
+	margin-top: 0px;
+	font-size: 30px;
+}
+#commentaire{
+		border-top-right-radius: 50px 100px;
+	border-bottom-left-radius: 50px 100px;
+	
+	padding:40px;
+	background:white;
+}
+.textarea{
+	padding:5px;
+	background:lightblue;
+	width:100%;
+	font-family:"fonttitre","arial";
+	margin-top: 0px;
+	font-size: 20px;
+	text-indent: 15px
+
+}
+#pseudo{
+	text-align: right;
+	padding:5px;
+	height:27px;
+	background:lightblue;
+	font-family:"fonttitre","arial";
+	margin-top: 0px;
+	font-size: 22px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+	color:#2c94dd ;
+}
+#confirm span{
+	position:relative;
+
+	/* Centrer verticalement */
+	top:100px;
+	margin-top: 0px;
+		
+	/* Centrer horizontalement */
+	left:200px;
+	margin-left:0px;
+
+}
+
+#confirm {
+	height:300px;
+	width: 600px;
+	 background: url(images/bulle.png) left  no-repeat;
+	 margin-left:-200px;
+}/*
+#confirm img{margin-left:-210px;
+	margin-top:0px;
+	z-index: 2;
+
+
+}*/
+/*-----------------------------------------------------------------------------------*/
+/*------------------ Ajout BD--------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------*/
+.formulaire_gauche{
+	float:left;
+	display:block;
+	margin-left: 100px;
+	margin-right: 40px;
+	width: 60px;
+	padding:5px;
+}
+.formulaire_droit{
+	margin:10px;
+	float:left;
+	display:block;
+	height:20px;
+	width:100px;
+}
+textarea.formulaire_droit{
+
+	float:left;
+	display:block;
+	height:200px;
+	width: 300px;
+}
+.formulaire{
+	width: 600px;
+}
+/*-----------------------------------------------------------------------------------*/
+/*------------------ A PROPOS---------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------*/
+#apropos{
+	height:500px;
+	width: 543px;
+	padding-top:200px;
+	padding-left:100px;
+	 background: url(images/tv_simpson.png) left  no-repeat;
+	 margin-left:30px;	
+}
+#apropos h1{ color:white;}
